@@ -9,6 +9,4 @@ import { HeaderComponent } from './header/header.component';
   imports: [RouterOutlet, HomeComponent, HeaderComponent],
   templateUrl: './app.component.html',
 })
-export class AppComponent {
-  title = 'Rent House Application Website';
-}
+export class AppComponent {}
