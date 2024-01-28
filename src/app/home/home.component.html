@@ -1,0 +1,18 @@
+<section>
+  <form class="filter">
+    <input
+      class="filter__input"
+      type="text"
+      placeholder="Şehre göre ev..."
+      #filter
+    />
+    <button
+      class="filter__button"
+      type="button"
+      onclick="onClickToFilterHouse(filter.value)"
+    >
+      Filtrele
+    </button>
+  </form>
+</section>
+<app-house-list-container />
