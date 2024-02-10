@@ -1,0 +1,44 @@
+:host {
+  display: contents;
+}
+
+.drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  &__overlay {
+    width: 20%;
+    height: 100%;
+    background-color: #21212190;
+  }
+
+  &__content {
+    width: 80%;
+    height: 100%;
+    background-color: #212121;
+    padding: 2rem;
+
+    &--icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .close {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

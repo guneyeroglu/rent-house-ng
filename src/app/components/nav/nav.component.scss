@@ -1,0 +1,43 @@
+nav {
+  display: block;
+
+  & > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    li {
+      border: 1px solid #f6f6f6;
+      background-color: #212121;
+      border-radius: 0.5rem;
+      transition: background-color 0.35s ease-in-out;
+
+      a {
+        display: block;
+        padding: 1rem;
+        font-size: 2rem;
+        transition: color 0.35s ease-in-out;
+      }
+
+      &:hover {
+        background-color: #f6f6f6;
+
+        a {
+          color: #212121;
+        }
+      }
+    }
+  }
+}
+
+:host.mobile {
+  nav {
+    & > ul {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+  }
+}
