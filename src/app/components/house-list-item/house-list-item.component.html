@@ -1,0 +1,9 @@
+<a class="house__link" [routerLink]="['/details', id + 1]">
+  <div class="house__link--image">
+    <img [src]="src" [alt]="alt" />
+  </div>
+  <div class="house__link--description">
+    <h3>{{ location }}</h3>
+    <span>{{ estateName }}</span>
+  </div>
+</a>

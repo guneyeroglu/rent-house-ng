@@ -1,0 +1,36 @@
+.house__link {
+  cursor: pointer;
+
+  &--image {
+    width: 100%;
+    height: 35rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #d1d1d1;
+    color: #4f4f4f;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &--description {
+    padding: 1rem;
+    border-top: 1px solid #d1d1d1;
+
+    h3 {
+      color: #d1d1d1;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      color: #d1d1d1;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+  }
+}

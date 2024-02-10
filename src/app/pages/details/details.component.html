@@ -1,0 +1,26 @@
+<article class="details">
+  <aside class="details__image">
+    <img src="{{ data?.photo }}" alt="House - {{ data?.name }}" />
+  </aside>
+  <div class="details__content">
+    <div class="details__content--info">
+      <span>House Name</span>
+      <h3>{{ data?.name }}</h3>
+    </div>
+    <div class="details__content--info">
+      <span>City, State</span>
+      <h3>{{ data?.city }}, {{ data?.state }}</h3>
+    </div>
+    <div class="details__content--info">
+      <span>Available Units</span>
+      <h3>{{ data?.availableUnits }}</h3>
+    </div>
+    <div class="details__content--info">
+      <span>House Amenities</span>
+      <div class="details__content--info amenities">
+        <h4 class="{{ data?.wifi ? 'found' : 'not-found' }}">Wi-Fi</h4>
+        <h4 class="{{ data?.laundry ? 'found' : 'not-found' }}">Laundry</h4>
+      </div>
+    </div>
+  </div>
+</article>

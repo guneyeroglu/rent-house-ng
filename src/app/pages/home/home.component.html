@@ -1,0 +1,20 @@
+<div class="filter">
+  <input #filter type="text" placeholder="Şehre veya eyalete göre ev..." />
+  <button type="button" (click)="onClickToFilterHouse(filter.value)">
+    Filtrele
+  </button>
+</div>
+<section class="results">
+  <ul class="list">
+    <li class="list__item" *ngFor="let house of filteredData">
+      <hr-house-list-item
+        class="list__item--component"
+        [id]="house.id"
+        [src]="house.photo"
+        [alt]="house.name"
+        [location]="house.city + ', ' + house.state"
+        [estateName]="house.name"
+      />
+    </li>
+  </ul>
+</section>
