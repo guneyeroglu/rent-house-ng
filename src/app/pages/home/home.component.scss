@@ -67,3 +67,42 @@
     }
   }
 }
+
+@media screen and (max-width: 1444px) {
+  .filter {
+    width: 33.333%;
+  }
+
+  .results {
+    .list {
+      &__item {
+        flex: 0 1 33.333%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .filter {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .results {
+    .list {
+      &__item {
+        flex: 0 1 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .results {
+    .list {
+      &__item {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}

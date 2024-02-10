@@ -28,8 +28,8 @@ export class HomeComponent {
 
     this.filteredData = this.data.filter(
       (house: IHouse) =>
-        house.city.toLowerCase().includes(e.toLowerCase()) ||
-        house.state.toLowerCase().includes(e.toLowerCase())
+        house.city.toLowerCase().includes(e.toLowerCase().trim()) ||
+        house.state.toLowerCase().includes(e.toLowerCase().trim())
     );
   }
 }

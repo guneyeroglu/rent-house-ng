@@ -4,24 +4,12 @@
       <hr-home-icon />
       <h1>House Rent</h1>
     </a>
-    <nav class="header__container--nav">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/guneyeroglu/" target="_blank">
-            <span>LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/guneyeroglu" target="_blank">
-            <span>GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/guneyeroglu_/" target="_blank">
-            <span>Instagram</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <button class="header__container--mobileNav" (click)="handleOpenDrawer()">
+      <hr-hamburger-icon />
+    </button>
+    <hr-nav class="desktop" />
+    <hr-drawer [handleCloseDrawer]="handleCloseDrawer">
+      <hr-nav class="mobile" *ngIf="openDrawer" />
+    </hr-drawer>
   </div>
 </header>

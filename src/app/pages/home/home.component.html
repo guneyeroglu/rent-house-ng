@@ -1,5 +1,10 @@
 <div class="filter">
-  <input #filter type="text" placeholder="Şehre veya eyalete göre ev..." />
+  <input
+    #filter
+    type="text"
+    placeholder="Şehre veya eyalete göre ev..."
+    (keydown.enter)="onClickToFilterHouse(filter.value)"
+  />
   <button type="button" (click)="onClickToFilterHouse(filter.value)">
     Filtrele
   </button>

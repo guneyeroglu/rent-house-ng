@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'hr-home-icon',
   standalone: true,
   imports: [],
-  templateUrl: './home.html',
+  templateUrl: './home-icon.html',
 })
 export class HomeIconComponent {}
