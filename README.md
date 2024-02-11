@@ -1,27 +1,23 @@
-# RentHouseNg
+# [RentHouseNg](https://rent-house-ng.vercel.app/home)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
 
-## Development server
+## Content & Data
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A website application that lists, searches and allows us to examine the details of the houses available for rent and their contents.
 
-## Code scaffolding
+Mock data was taken from [Angular.io](https://angular.io/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Deployment
 
-## Build
+### - Vercel
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+I preferred [Vercel](https://vercel.com/) for the deployment phase. You can access it via this [link](https://rent-house-one.vercel.app/home).
 
-## Running unit tests
+### - Localhost Server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm install`, after the installation is finished run `ng serve` for a dev server. Navigate to [http://localhost:4200/home](http://localhost:4200/home).
 
-## Running end-to-end tests
+## ME
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project was developed by [Güney Eroğlu](https://www.linkedin.com/in/guneyeroglu/).
