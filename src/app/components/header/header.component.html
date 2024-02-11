@@ -8,8 +8,8 @@
       <hr-hamburger-icon />
     </button>
     <hr-nav class="desktop" />
-    <hr-drawer [handleCloseDrawer]="handleCloseDrawer">
-      <hr-nav class="mobile" *ngIf="openDrawer" />
+    <hr-drawer *ngIf="isDrawerOpen" (close)="handleCloseDrawer()">
+      <hr-nav class="mobile" />
     </hr-drawer>
   </div>
 </header>

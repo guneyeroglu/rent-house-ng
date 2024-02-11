@@ -6,6 +6,7 @@ import {
   HamburgerIconComponent,
 } from '../../../assets/svgs';
 import { DrawerComponent } from '../drawer/drawer.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'hr-header',
@@ -15,18 +16,19 @@ import { DrawerComponent } from '../drawer/drawer.component';
     HamburgerIconComponent,
     NavComponent,
     DrawerComponent,
+    CommonModule,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  openDrawer: boolean = false;
+  isDrawerOpen: boolean = false;
 
   handleOpenDrawer() {
-    this.openDrawer = true;
+    this.isDrawerOpen = true;
   }
 
   handleCloseDrawer() {
-    this.openDrawer = false;
+    this.isDrawerOpen = false;
   }
 }

@@ -1,8 +1,8 @@
 <div class="drawer">
-  <div class="drawer__overlay"></div>
+  <div class="drawer__overlay" (click)="close.emit()"></div>
   <div class="drawer__content">
     <div class="drawer__content--icon">
-      <button class="close" (click)="handleCloseDrawer()">
+      <button class="close" (click)="close.emit()">
         <hr-close-icon />
       </button>
     </div>
