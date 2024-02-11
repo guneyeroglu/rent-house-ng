@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { IHouse } from '../../global/interfaces';
-import dbData from '../../../db.json';
 import { ActivatedRoute } from '@angular/router';
+
+import dbData from '../../../db.json';
+import { IHouse } from '../../global/interfaces';
 
 @Component({
   selector: 'hr-details',

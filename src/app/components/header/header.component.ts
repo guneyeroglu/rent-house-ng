@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { NavComponent } from '../nav/nav.component';
 import {
   HomeIconComponent,
   HamburgerIconComponent,
 } from '../../../assets/svgs';
+import { NavComponent } from '../nav/nav.component';
 import { DrawerComponent } from '../drawer/drawer.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'hr-header',
