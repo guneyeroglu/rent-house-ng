@@ -12,7 +12,7 @@ Mock data was taken from [Angular.io](https://angular.io/).
 
 ### - Vercel
 
-I preferred [Vercel](https://vercel.com/) for the deployment phase. You can access it via this [link](https://rent-house-one.vercel.app/home).
+I preferred [Vercel](https://vercel.com/) for the deployment phase. You can access it via this [link](https://rent-house-ng.vercel.app/home).
 
 ### - Localhost Server
 
